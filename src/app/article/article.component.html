@@ -1,0 +1,23 @@
+<div class="card text-center">
+  <div class="card-header">
+    Reddit
+  </div>
+  <div class="card-body">
+      <div id="votes" class="container card w-25">
+        <div class="card-body">
+          <h5 class="card-title"><label>POINTS :</label>
+              {{articleModel.votes}}
+          </h5>
+        </div>
+      </div>
+    <h5 class="card-title"><label>Article Information :</label><br>
+          <a href="{{articleModel.link}}">{{articleModel.title}}</a>
+    </h5>
+    <br>
+    <button class="btn btn-primary" (click)="voteUp()">VoteUp</button>&nbsp;&nbsp;&nbsp;&nbsp;
+    <button class="btn btn-danger" (click)="voteDown()">VoteDown</button>
+  </div>
+  <div class="card-footer text-muted">
+    A Reddit Article
+  </div>
+</div>
